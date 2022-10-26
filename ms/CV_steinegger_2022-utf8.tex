@@ -1,0 +1,629 @@
+\documentclass{resume} % Use the custom resume.cls style
+\name{Martin Steinegger} % Your name
+\address{502-423 1 Gwanak-ro, Gwanak-gu, \\ Seoul, Korea} % Your address
+\address{Born 29.01.1985 in Erding. German citizen. } % Your secondary addess (optional)
+\address{+82~$\cdot$~2~$\cdot$~880~$\cdot$~4438 \\ themartinsteinegger@gmail.com} % Your phone number and email
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+%\usepackage{fullpage}
+\usepackage{setspace}  % controllable line spacing 
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage[utf8]{inputenc}
+
+%\usepackage{picins}    % um das Foto in die rechte obere Ecke zu bekommen
+\usepackage{eurosym}
+\usepackage{color}
+\usepackage{pdfpages}
+
+\definecolor{urlcol}{rgb}{0,0,0.7}
+\definecolor{highlight}{rgb}{0.5,0,0}
+\usepackage[colorlinks, urlcolor=blue, linkcolor=blue]{hyperref}
+
+
+\pagestyle{empty}
+\oddsidemargin  -0.2cm
+\evensidemargin -0.2cm
+\textwidth      16.5cm
+\headheight     0.0cm
+\topmargin      -1.8cm
+\textheight     26cm
+\parindent      0cm
+\renewcommand{\familydefault}{\sfdefault}
+\setlength{\parskip}{5pt}
+
+\renewcommand\refname{}
+\renewcommand{\contentsname}{\LARGE Curriculum Vitae\\[20mm]{\Large Content\\[0mm]}}
+\providecommand{\href}[2]{#2}                          %generates the href macro if needed
+
+\newenvironment{packed_itemize}{
+\begin{itemize}
+  \setlength{\itemsep}{3pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{itemize}}
+ 
+\DeclareMathVersion{mymath}
+\DeclareSymbolFont{myletters}{OML}{zplm}{m}{it}
+\SetSymbolFont{letters}{mymath}{OML}{zplm}{m}{it}
+\DeclareSymbolFont{myoperators}{OT1}{pplx}{m}{n}
+\SetSymbolFont{operators}{mymath}{OT1}{pplx}{m}{n}
+
+\mathversion{mymath}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\setcounter{tocdepth}{1}
+
+\pagestyle{plain}
+\setcounter{page}{1}
+
+\setlength{\oddsidemargin}{-0.2cm}
+\setlength{\evensidemargin}{-0.2cm}
+\setlength{\linewidth}{16.5cm}
+\setlength{\textheight}{26cm}
+\setlength{\tabcolsep}{0cm}
+
+
+\begin{rSection}{Curriculum Vitae}
+\vspace{2mm}
+
+{\bf Education}\vspace{1mm}
+
+\begin{tabular}{p{3.6cm}p{13.0cm}}
+08/2014 - 08/2018 & Ph.D. in Computer Science at the Technical University Munich (Passed with summa cum laude)
+\\[1.mm]
+04/2013 - 08/2014 & Master of Science in Computer Science at the Ludwig Maximilian University (Passed with merit)
+\\[1.mm]
+09/2010 - 04/2013 & Bachelor of Science in Bioinformatics at TU Munich / Ludwig Maximilian University 
+\\[1.mm]
+09/2006 - 07/2008 & Business Informatics at the EDV-Schule Plattling  (Passed as second best student)
+\\[1.mm]
+10/2001 - 06/2005 & Computer Engineering at the HTL Braunau (Technical college for electronics) 
+\\[1mm]
+\end{tabular}
+\vspace{1mm}
+
+{\bf Research and Industry experience}\vspace{1mm}
+
+\begin{tabular}{p{3.6cm}p{13.0cm}}
+since 03/2020 & 
+Assistant Professor at Seoul National University. \textit{full-time} \\ & Laboratory of Machine Learning \& Bioinformatics
+\\[1.mm]
+10/2018 - 02/2020 & 
+Postdoctoral Fellow at the Salzberg Lab at the Johns Hopkins University School of Medicine. \textit{full-time} \\ & Pathogen detection in human metagenomic data.
+\\[1.mm]
+08/2014 - 09/2018 & 
+PhD Student at the Quantitative and Computational Biology Laboratory at the Max-Planck Institute for Biophysical Chemistry. \textit{full-time} \\ & Ultrafast and sensitive sequence search methods in the era of next generation sequencing. 
+\\[1.mm]
+04/2016 - 07/2018 & Collaboration with Seok Lab at the Seoul National University. \\&Large-scale de-novo structure prediction based on coevolution analysis of metagenomics-enriched multiple sequence alignments.
+\\[1.mm]
+03/2015 - 04/2016 & Collaboration with Notredame Lab at the Centre for Genomic Regulation in Barcelona. \\ & Supporting the development of a large scale multiple sequence aligner.
+\\[1.mm]
+08/2014 - 12/2014 & Visiting Scientist at the Seok Lab, Seoul National University. \textit{full-time} \\ & Improving energy calculation for docking and protein structure prediction.
+\\[1.mm]
+05/2012 - 07/2014 & Research assistant at the Soeding Lab, Gene Center, LMU Munich. \textit{part-time} \\ & Improving HMM remote homologues protein search method.
+\\[1.mm]
+08/2013 - 10/2013 & Visiting Scientist at the Sali Lab, UCSF. \textit{full-time} \\ & Implementing a Bayesian inference framework to determine enzyme pathways.
+\\[1.mm]
+07/2011 - 05/2012 & Visiting Scientist at Rost Lab, Technical University Munich. \textit{part-time} \\ & Full In-Silico mutagenesis of the human proteome using the Cloud. 
+\\[1.mm]
+06/2011 - 05/2012 & Technical Architect / Scrum Master at Medability. \textit{part-time} \\ & Developing a haptic surgery simulator
+\\[1.mm]
+09/2008 - 06/2011 & Software Engineer / Security Tester / Performance engineering at Accenture Technology Solutions. \textit{full-time}
+\\[1.mm]
+09/2007 - 01/2008 & Software Engineer / Technical Architect at visionary people AG. \textit{freelancer}
+\\[1.mm]
+11/2005 - 06/2006 & IT support at Bezirkskrankenhaus Haar. \textit{full-time}
+\\[1.mm]
+\end{tabular}
+\vspace{1mm}
+\end{rSection}
+
+
+\newpage
+
+\begin{rSection}{Achievements and Qualifications}
+\vspace{2mm}
+
+{\bf Awards, Fellowships and Achievements}\vspace{1mm}
+
+\begin{tabular}{p{2.5cm}p{14.1cm}}
+2018 & Poster award at the ECCB 2018
+\\[1.mm] 
+2016 & Poster award at the Critical Assessment of Protein Structure Prediction 12 Conference   
+\\[1.mm] 
+2015 & Max Planck PhD fellowship
+\\[1.mm] 
+2013 & Winner of the Twilio price (${\sim}1000\$$) at the Disrupt TechCrunch Hackathon ($1200{+}$ attendees)
+\\[1.mm] 
+2012 & Excellence initiative research grant, Ludwig Maximilian University
+\\[1.mm] 
+2012 & AMD Research grant (${\sim}700$\$ one graphic card)
+\\[1.mm] 
+2012 & NVIDA research grant (${\sim}3000$\$ two graphic cards)
+\\[1.mm] 
+2011 & Amazon research grant ($10.000\$$ Amazon Web Services credits)
+\\[1.mm] 
+2011 & Finalist in the Big Data Challenge, CycleComputing
+\\[1.mm] 
+2008 & Master prize of the Bavarian state government, EDV-Schule Plattling
+\\[1.mm] 
+\end{tabular}
+\vspace{1.0mm}
+
+{\bf Certificates }\vspace{1mm}
+
+\begin{tabular}{p{2.5cm}p{14.1cm}}
+2011 & Certified ScrumMaster (CSM)
+\\[1.mm] 
+2010 & ASDA Application Developer (Massachusetts Institute of Technology / Accenture)
+\\[1.mm] 
+2010 & Information Technology Infrastructure Library V3 Foundation
+\\[1.mm] 
+2010 & SpringSource Certified Spring Professional
+\\[1.mm] 
+2010 & ISTQB Certified Tester 
+\\[1.mm] 
+2009 & Sun Certified Java Programmer
+\\[1.mm] 
+2008 & IBM Certified System Administrator
+\\[1.mm] 
+\end{tabular}
+\vspace{1.0mm}
+
+{\bf Technical Strengths}\vspace{1mm}
+
+\begin{tabular}{ p{2.5cm} >{}l @{\hspace{6ex}} l }
+Programming & C\texttt{++}, C, Java, Shell scripting, Python \\[1.mm]
+Cloud & Amazon Web Services \\[1.mm]
+Testing &Unit, performance, functional, penetration test \\[1.mm]
+Databases & BI, SQL, PL/SQL, Oracle 11g, MySQL, db4o
+\\[1.mm]
+\end{tabular}
+\vspace{1.0mm}
+
+{\bf Languages}\vspace{1mm}
+
+\begin{tabular}{p{2.5cm}p{14.1cm}}
+German & Native\\[1.mm]
+English & Fluent\\[1.mm]
+Korean & Beginner\\[1.mm]
+\end{tabular}
+
+
+{\bf Public source code}\vspace{1mm} 
+
+%\begin{packed_itemize}
+\begin{tabular}{p{2.5cm}p{14.1cm}}
+ColabFold  & \url{https://github.com/sokrypton/ColabFold} \\[1.mm]
+Foldseek  & \url{https://github.com/steineggerlab/foldseek} \\[1.mm]
+Conterminator & \url{https://github.com/martin-steinegger/conterminator} \\[1.mm]
+Plass  &  \url{github.com/soedinglab/plass} \\[1.mm]
+Linclust  &  \url{github.com/soedinglab/mmseqs2} \\[1.mm]
+MMseqs2  &  \url{github.com/soedinglab/mmseqs2} \\[1.mm]
+MMseqs  &  \url{github.com/soedinglab/mmseqs} \\[1.mm]
+HH-suite  &  \url{github.com/soedinglab/hh-suite} \\[1.mm]
+\end{tabular}
+%\end{packed_itemize}
+\end{rSection}
+
+
+
+\newpage
+
+
+\begin{rSection}{Talks, Posters, and Publications}
+\vspace{2mm}
+
+{\bf Talks }\vspace{1mm}
+
+\begin{tabular}{p{2.5cm}p{14.1cm}}
+10/2022 & Sungkyunkwan University, Korea, Next generation protein analysis tools in the ear of highly accurate protein structure prediction 
+\\[1.mm] 
+09/2022 & UNIST, Korea, Next generation protein analysis tools in the ear of highly accurate protein structure prediction 
+\\[1.mm] 
+08/2022 & Korea Brain Research Institute, Korea, Next generation protein structure analyze with ColabFold and Foldseek 
+\\[1.mm] 
+06/2022 & Korea Institute For Advanced Study, Korea, Fast structure prediction and search
+\\[1.mm] 
+05/2022 & NWO Life, Nederland, Mega scale protein structure prediction and search
+\\[1.mm] 
+05/2022 & Nobel Symposium, Sweden, Mega scale protein structure prediction and search
+\\[1.mm] 
+05/2022 & Yonsei, Korea, Mega scale protein structure prediction and search
+\\[1.mm] 
+04/2022 & Microbiome Forum Johns Hopkins, USA, Metagenomic sequence classification: from sequences to structures. 
+\\[1.mm] 
+02/2022 & BASF, Germany, Next generation protein analysis tools in the ear of highly accurate protein structure prediction
+\\[1.mm] 
+02/2022 & KMB 2021, Korea, Mega scale protein structure prediction and search
+\\[1.mm] 
+11/2021 & Swiss Institute of Bioinformatics, Switzerland, Next generation protein analysis tools in the ear of highly accurate protein structure prediction
+\\[1.mm] 
+11/2021 & KSMCB 2021, Korea, Mega scale protein structure prediction and search
+\\[1.mm] 
+08/2021 & Boston Protein Design and Modeling Club, USA, ColabFold - Making protein folding accessible to all via Google Colab!
+\\[1.mm] 
+07/2021 & BiATA Conference, Russia, MMseqs2 profile/profile: fast and ultra sensitive searches beyond the twilight zone
+\\[1.mm] 
+06/2021 & BVCN Conference, USA, Metagenomic pathogen detection using MMseqs2, Plass, and Linclust
+\\[1.mm] 
+12/2020 & MicroEvo Meeting Informatics, Denmark, The unresolved dying of the Mariana crows 
+\\[1.mm] 
+09/2020 & Genome Informatics, UK, Protein-guided nucleotide viral genome assembly for huge metagenomic datasets 
+\\[1.mm] 
+09/2019 & University of Salzburg, Austria, New algorithms and tools for large-scale sequence analysis of metagenomic data
+\\[1.mm] 
+05/2019 & University of Konstanz, Germany, New algorithms and tools for large-scale sequence analysis of metagenomic data
+\\[1.mm] 
+04/2019 & RECOMB-SEQ 2019, USA, New algorithms and tools for large-scale sequence analysis of metagenomics data
+\\[1.mm] 
+01/2019 & Seoul National University, Republic of Korea, Metagenomics data analysis on steroids
+\\[1.mm] 
+10/2018 & Johns Hopkins University, USA, Metagenomics data analysis on steroids
+\\[1.mm] 
+09/2018 & Max Planck Institute for Marine Microbiology, Germany, Metagenomics data analysis on steroids
+\\[1.mm] 
+07/2018 & BiATA 2018, Russia, New algorithms and tools for large-scale sequence analysis of metagenomics data
+\\[1.mm] 
+07/2018 & ISMB 2018, USA, MMseqs2 enables sensitive protein sequence searching for the analysis of massive data sets
+\\[1.mm] 
+04/2018 & European Bioinformatics Institute, England, Fast and sensitive protein sequence search, clustering and assembly tools for the analysis of massive metagenomics datasets
+\\[1.mm] 
+04/2018 & NGS 2018, Spain, Fast and sensitive protein sequence search, clustering and assembly tools for the analysis of massive metagenomics datasets
+\\[1.mm]
+01/2018 & Johns Hopkins University, USA, Search, Clustering and Assembly tools for huge metage- nomics datasets
+\\[1.mm]
+\end{tabular}
+\begin{tabular}{p{2.5cm}p{14.1cm}}
+
+01/2018 & Rutgers University, USA, Search, Clustering and Assembly tools for huge metagenomics datasets
+\\[1.mm] 
+05/2017 & Tokyo University, Japan, MMseqs2 / Linclust
+\\[1.mm] 
+05/2017 & National Institute of Advanced Industrial Science, Japan, MMseqs2 / Linclust
+\\[1.mm] 
+06/2016 & SocBIN2016,  Russia, Sensitive protein sequence searching for the analysis of massive data sets
+\\[1.mm] 
+06/2015 & Beijing Genomics Institute, China, HH-suite for sensitive protein sequence searching. / MMseqs for protein search
+\\[1.mm] 
+05/2015 & Quest for Orthologs 4, Spain, MMseqs for clustering huge protein sets
+\\[1.mm] 
+03/2015 & European Bioinformatics Institute, England, Sequence clustering and search in the ear of NGS
+\\[1.mm] 
+06/2014 & ISCB NGS14, Spain, MMseqs suite for fast and sensitive batch searching
+\\[1.mm] 
+06/2014 & Hadoop User Group, Germany, In-Silico mutagenises on Amazon EMR
+\\[1.mm] 
+09/2012 & GMDS, Germany, Cloud architecture for In-Silico mutagenesis
+\\[1.mm] 
+12/2011 & EDAM Meeting, Netherlands, Cloud architecture for PredictProtein
+\\[1.mm] 
+07/2010 & University Cologne, Germany, Application Security
+\\[1.mm] 
+01/2010 & Accenture community meeting, Germany, Web security
+\\[1mm]
+\end{tabular}
+
+\vspace{1mm}
+
+{\bf Poster }\vspace{1mm}
+
+\begin{tabular}{p{2.5cm}p{14.1cm}}
+11/2019 & Genome Informatics 2019, USA, Terminating contamination: large-scale search identifies more than 2,000,000 contaminated entries in GenBank 
+\\[1.mm] 
+11/2019 & Genome Informatics 2019, USA, New algorithms and tools for large-scale sequence analysis of metagenomic data
+\\[1.mm] 
+09/2018 & ECCB18, USA, MMseqs2 desktop and local web server app for fast, interactive sequence searches
+\\[1.mm] 
+07/2018 & ISMB 2018, USA, MMseqs2 enables sensitive protein sequence searching for the analysis of massive data sets
+\\[1.mm] 
+04/2017 & ISMB NGS 2017, Spain, Sensitive protein sequence searching for the analysis of massive data sets
+\\[1.mm] 
+12/2016 & CASP12, Italy, Sensitive protein sequence searching for the analysis of massive data sets
+\\[1.mm] 
+04/2016 & ISMB NGS 2016, Spain, Sensitive protein sequence searching for the analysis of massive data sets
+\\[1.mm] 
+03/2016 & ABLS 2016, Belgium, Fast and sensitive searching of proteomic data
+\\[1.mm] 
+05/2015 & Quest for Orthologs 4, Spain, MMseqs for clustering huge protein sets
+\\[1.mm] 
+09/2014 & KIAS Conference on Protein Structure and Function, Republic of Korea, Accelerated pairwise HMM alignment using SIMD programing and improved secondary structure scoring 
+\\[1mm]
+\end{tabular}
+\vspace{1mm}
+
+\newpage
+{\bf Research Grants }\vspace{1mm}
+
+PI is Martin Steinegger unless otherwise indicated
+
+\begin{tabular}{p{3.6cm}p{13.0cm}}
+2022 - 2025 & Samung, "Rapid and precise diagnosis of infectious diseases using metagenomics"  30,000,000 KRW
+\\[1.mm]  
+2020 - 2021 & Seoul National University, the New Faculty Startup Fund, "Capture probe design in the era of next generation sequencing"  40,000,000 KRW
+\\[1.mm] 
+2020 - 2023 & National Research Foundation of Korea, "Discovery of novel genomes through protein-guided assembly" NRF-2019R1A6A1A10073437, 150,000,000 KRW  
+\\[1.mm] 
+2020 - 2024 & Seoul National University, the Creative-Pioneering Researchers Program, "Petasearch: surveilling pathogens on a global scale",  320,000,000 KRW
+\\[1.mm] 
+2020 - 2024 & National Research Foundation of Korea, "In silico protein design by artificial intelligence and physical chemistry", NRF-2020M3A9G7103933, 450,000,000 KRW (PI : Chaok Seok)
+\\[1.mm] 
+2021 - 2026 & National Research Foundation of Korea, "Folding the protein universe (FoldU): metagenomics scale protein structure prediction using maching learning", NRF-2021R1C1C102065, 743,450,000 KRW.
+\\[1.mm] 
+2021 - 2025 & National Research Foundation of Korea, "Development of Cryo-EM/ET Technology for 3D Bio-imaging at Molecular resolution", NRF-2021M3A9I4021220, 500,000,000  KRW (PI : Roh, Soung-hun) 
+\\[1.mm] 
+
+\end{tabular}
+\vspace{1mm}
+\newpage
+
+{\bf Features of work or interviews }\vspace{1mm}
+
+Articles covering me or the work of our lab. 
+\begin{thebibliography}{10}
+\vspace{-13mm}
+
+\bibitem{Callaway2022af2}
+Ewen Callaway (2022)
+‘The entire protein universe’: AI predicts shape of nearly every known protein, {\em Nature}, doi: 10.1038/d41586-022-02083-2
+
+\bibitem{Callaway2022af2}
+Ewen Callaway (2022)
+What's next for AlphaFold and the AI protein-folding revolution, {\em Nature}, doi: 10.1038/d41586-022-00997-5
+
+\bibitem{mueller2021colabfold}
+Henrik Müller (2022)
+Interview mit Martin Steinegger über AlphaFold2 und ColabFold {\em Laborjournal} (in German)
+
+\bibitem{eisenstein2021ai}
+Michael Eisenstein (2021)
+Artificial intelligence powers protein-folding predictions, {\em Nature}, doi: 10.1038/d41586-021-03499-y
+
+\bibitem{mueller2021colabfold}
+Henrik Müller (2021)
+Interview mit Martin Steinegger über AlphaFold2 und ColabFold {\em Laborjournal} (in German)
+
+\bibitem{forrester2021newpi}
+Nikki Forrester, (2021)
+How new principal investigators tackled a tumultuous year, {\em Nature}, doi: 10.1038/d41586-021-01311-5
+
+\bibitem{tang2020conterm}
+Lin Tang, (2020)
+Contamination in sequence databases, {\em Nature Methods}, doi: 10.1038/s41592-020-0895-8
+\end{thebibliography}
+
+
+
+
+{\bf Publications }\vspace{1mm}
+
+The most important articles are highlighted in \textcolor{highlight}{red}.
+\begin{thebibliography}{10}
+\vspace{-13mm}
+
+\bibitem{sommer2022highly}
+Sommer, M.,, Cha S., Varabyou, A., Rincon M.,  Park S., Minkin I., Pertea M.,  {\bf Steinegger, M.}$^\#$,, Salzberg L. S.$^\#$, (2022)
+Highly accurate isoform identification for the human transcriptome, {\em bioRxiv}, doi: 10.1101/2022.06.08.495354  ($^\#$Equal contributions.)
+
+\bibitem{bordin2022alphafold}
+Bordin N., Sillitoe I., Nallapareddy V. M., Rauer C., Lam D. S., Waman P. V., Sen N., Heinzinger M., Littmann M., Kim S., Velankar S., Steinegger M., Rost B., Orengo C.
+AlphaFold2 reveals commonalities and novelties in protein structure space for 21 model organisms, {\em bioRxiv}, doi: 10.1101/2022.06.02.494367 
+
+\bibitem{van2022foldseek}
+\textcolor{highlight}{
+van Kempen, M., Kim, S., Tumescheit, C., Mirdita, M., Gilchrist C. L.M., S{\"o}ding, J. and {\bf Steinegger, M.}  (2022)
+Foldseek: fast and accurate protein structure search, {\em bioRxiv}, doi: 10.1101/2022.02.07.479398 
+}
+
+\bibitem{lui2021blockalign}
+Liu D., and {\bf Steinegger M.} (2021),
+Block aligner: fast and flexible pairwise sequence alignment with SIMD-accelerated adaptive blocks {\em bioRxiv}, doi: 10.1101/2021.08.15.456425
+
+\bibitem{vanni2021agnostos}
+Vanni, C., Schechter, M., Delmont, T., and others (2021),
+AGNOSTOS-DB: a resource to unlock the uncharted regions of the coding sequence space {\em bioRxiv}, doi: 10.1101/2021.06.07.447314
+
+\end{thebibliography}
+
+
+{\bf Peer-reviewed manuscripts}\\[-26mm]
+
+\begin{thebibliography}{10}
+
+\vspace{8mm}
+\bibitem{kim2022ufcg}
+Kim, D., Gilchrist C. L.M., Chun J., {\bf Steinegger M.} (2022)
+UFCG: database of universal fungal core genes and pipeline for genome-wide phylogenetic analysis of fungi  {\em Nucleic Acids Research, accepted}, doi: TBA
+
+\bibitem{lu2022kraken}
+Lu J., Rincon N., Wood E D., Breitwieser F., Pockrandt C., Langmead B., Salzberg L S.  and {\bf Steinegger M.} (2022), 
+Metagenome analysis using the Kraken software suite {\em Nature Protocols}, doi: 10.1038/s41596-022-00738-y
+
+
+\bibitem{mirdita2022colabfold}
+\textcolor{highlight}{
+Mirdita M., Schütze K., Moriwaki Y., Heo L.,Ovchinnikov S. and {\bf Steinegger M.} (2022), 
+ColabFold: Making protein folding accessible to all {\em Nature Methods}, doi: 10.1038/s41592-022-01488-1
+}
+
+\newpage
+
+\bibitem{Choi2022-el}
+Choi, Hyun-Kyu, Hyunook Kang, Chanwoo Lee, Hyun Gyu Kim, Ben P. Phillips, Soohyung Park, Charlotte Tumescheit, and others (2022). 
+Evolutionary Balance between Foldability and Functionality of a Glucose Transporter {\em Nature Chemical Biology}, doi:10.1038/s41589-022-01002-w.
+
+\bibitem{vanni2020unifying}
+Vanni, C., Schechter, M., Silvia G., Barber{\'a}n, A, Buttigieg, P., Casamayor, E., Delmont, T., Duarte, C., Eren, A. and Finn, R. and others (2022), 
+Unifying the global coding sequence space enables the study of genes with unknown function across biomes {\em elife}, doi: 10.7554/eLife.67667
+
+\bibitem{seok2021accurate}
+Seok, C. and Baek, M. and {\em Steinegger, M.} and Park, H. and Lee, G. and Won, J. (2021)
+Accurate protein structure prediction: what comes next? {\em Biodesign} doi: 10.34184/kssb.2021.9.3.47
+
+\bibitem{pockrandt2021phylocsf}
+Pockrandt, C.,  {\bf Steinegger M.}, Salzberg L S. (2021),  
+PhyloCSF++: A fast and user-friendly implementation of PhyloCSF with annotation tools. {\em Bioinformatics}, doi:  10.1093/bioinformatics/btab756
+
+\bibitem{jumper2021casp14}
+Jumper, J., Evans, R., Pritzel, A., Green, T. and others (2021),
+Applying and improving AlphaFold at CASP14 {\em Proteins: Structure, Function, and Bioinformatics}, doi: 10.1002/prot.26257
+
+\bibitem{jumper2021alphafold}
+\textcolor{highlight}{
+Jumper J., Evans R., Pritzel A., Green T. and others (2021), 
+Highly accurate protein structure prediction with AlphaFold. {\em Nature}, doi: 10.1038/s41586-021-03819-2
+}
+
+\bibitem{elnaggar2020prottrans}
+Elnaggar, A., Heinzinger, M., Dallago, C., Rehawi, G., Wang, Y., Jones, L., Gibbs, T., Feher, T., Angerer, C., {\bf Steinegger, M.} and others (2021), 
+ProtTrans: Towards Cracking the Language of Lifes Code Through Self-Supervised Deep Learning and High Performance Computing, {\em IEEE Transactions on Pattern Analysis and Machine Intelligence}, doi: 10.1109/TPAMI.2021.3095381
+
+\bibitem{aevarsson2021extreme}
+Aevarsson, A., Kaczorowska, A., Adalsteinsson, A., Ahlqvist, J., Al-Karadaghi, S., and others (2021), 
+Going to extremes – a metagenomic journey into the dark matter of life {\em FEMS Microbiology Letters} 10.1093/femsle/fnab067
+
+\bibitem{bernhofer2021predictprotein}
+Michael Bernhofer, Christian Dallago, Tim Karl, Venkata Satagopam, Michael Heinzinger, Maria Littmann, Tobias Olenyi, Jiajun Qiu, Konstantin Schuetze, Guy Yachdav, Haim Ashkenazy, Nir Ben-Tal, Yana Bromberg, and others (2021), PredictProtein-Predicting Protein Structure and Function for 29 Years, {\em Nucleic Acids Research}, doi: 10.1093/nar/gkab354
+
+\bibitem{mirdita2020fast}
+Mirdita, M. and  {\bf Steingger, M.}, and Breitwieser, F. and Soeding, J. and Karin, E. L. (2021), 
+Fast and sensitive taxonomic assignment to metagenomic contigs. {\em Bioinformatics}, doi:  10.1101/2020.11.27.401018
+
+\bibitem{credle2020highly}
+Credle, J. J., Robinson, M., Gunn, J., Monaco, D., Sie, B., Tchir, A. L., Hardick, J., Zheng, X., Shaw-Saliba, K., and Rothman, Richard and others (2021), 
+Highly multiplexed oligonucleotide probe-ligation testing enables efficient extraction-free SARS-CoV-2 detection and viral genotyping. {\em Modern Pathology}, doi: 10.1038/s41379-020-00730-5
+
+\bibitem{zhao2020describeprot}
+Zhao, Bi and Katuwawala, Akila and Oldfield, Christopher J and Dunker, A Keith and Faraggi, Eshel and Gsponer, J{\"o}rg and Kloczkowski, Andrzej and Malhis, Nawar and Mirdita, Milot and Obradovic, Zoran and others (2021), DescribePROT: database of amino acid-level protein structure and function predictions. {\em Nucleic Acids Research}, doi: 10.1093/nar/gkaa931
+
+\bibitem{gabler2020mpitoolkit}
+Gabler F., Nam S., Till S., Mirdita M., {\bf Steinegger M.}, Söding J., Lupas A, Alva V., (2020), Protein Sequence Analysis Using the MPI Bioinformatics Toolkit.  {\em Current Protocols in Bioinformatics}, doi: 10.1002/cpbi.108
+
+\bibitem{Sein:2020co}
+Park S., {\bf Steinegger, M.}, Cho H. and Chun J. (2020)
+Metagenomic Association Analysis of Gut Symbiont Limosilactobacillus reuteri Without Host-Specific Genome Isolation. {\em Frontiers in Microbiology},  doi: 10.3389/fmicb.2020.585622
+
+\bibitem{Steinegger:2020co}
+\textcolor{highlight}{
+{\bf Steinegger, M.}, Salzberg L S. (2020)
+Terminating contamination: large-scale search identifies more than 2,000,000 contaminated entries in GenBank. {\em Genome Biology },  doi: 10.1186/s13059-020-02023-1
+}
+
+\newpage
+
+\bibitem{Steinegger:2019hh}
+{\bf Steinegger, M.}, Markus Meier, Milot Mirdita, Harald V\"ohringer, Stephan J. Haunsberger, and S\"oding, J. (2019)
+HH-suite3 for fast remote homology detection and deep protein annotation. {\em BMC Bioinformatics},  doi: 10.1186/s12859-019-3019-7
+
+\bibitem{Steinegger:2019plass}
+\textcolor{highlight}{
+{\bf Steinegger, M.}, Milot Mirdita, and S\"oding, J. (2019)
+Protein-level assembly increases protein sequence recovery from metagenomic samples manyfold. {\em Nature Methods}, {\bf 16}, 603–606, doi: 10.1038/s41592-019-0437-4 
+}
+\bibitem{Mirdita:2019}
+Milot Mirdita, {\bf Steinegger, M.}. and S\"oding, J. (2019) MMseqs2 desktop and local web server app for fast, interactive sequence searches. {\em Bioinformatics}. doi: 10.1093/bioinformatics/bty1057
+
+\bibitem{Steinegger:2018}
+\textcolor{highlight}{
+{\bf Steinegger, M.}, and S\"oding, J. (2018)
+Clustering huge protein sequence sets in linear time.
+{\em Nature Communications} doi: 10.1038/s41467-018-04964-5}
+
+\bibitem{Forslund:2018}
+Forslund K., Pereira C., Capella-Gutierrez S. and others (2018) 
+Gearing up to handle the mosaic nature of life in the quest for orthologs {\em Bioinformatics}, {bf 34}, i323–i329, doi: 10.1093/bioinformatics/btx542
+
+\bibitem{Mahlich:2018}
+Mahlich Y., {\bf Steinegger, M.}, Rost, B. and Bromberg Y. (2018) HFSP: High speed homology- driven function annotation of proteins. {\em Bioinformatics}, {bf 34}, i304–i312, doi: 10.1093/bioinformatics/bty262
+
+\bibitem{Steinegger:2014}
+\textcolor{highlight}{
+{\bf Steinegger, M.}, and S\"oding, J. (2017)
+MMseqs2: Sensitive protein sequence searching for the analysis of massive data sets.
+{\em Nature Biotechnology}, {\bf  35}, 1026–1028, doi: 10.1038/nbt.3988}
+
+\bibitem{Mirdita:2016}
+Mirdita, M.$^\#$, von den Driesch$^\#$, L., Galiez, G., Martin, M., S\"oding, J.$^*$, and {\bf Steinegger, M.}$^*$ (2017)
+Uniclust databases of clustered and deeply annotated protein sequences and alignments.  
+{\em Nucleic Acids Research}, {\bf 45}, D170–D176, doi: 10.1093/nar/gkw1081. . ($^\#$Equal contributions.) ($^*$Corresponding authors.)
+
+\bibitem{Hauser:2016}
+Hauser M.$^\#$, {\bf Steinegger, M.}$^\#$, and S\"oding, J. (2016)
+MMseqs software suite for fast and deep clustering and searching of large protein sequence sets.
+{\em Bioinformatics}, {\bf 32}, 1323-1330. doi: 10.1093/bioinformatics/btw006. ($^\#$Equal contributions.)
+
+\bibitem{kajan2013cloud}
+Kajan L., Yachdav G., Vicedo E., {\bf Steinegger M.}, Mirdita M., Angerm\"uller C., B\"ohm A., Domke S., Ertl J., Mertes C., Reisinger E., Staniewski C., B. Rost (2014)
+Cloud prediction of protein structure and function with PredictProtein for Debian.
+  {\em BioMed research international}, doi: 10.1155/2013/398968
+\end{thebibliography}
+
+{\bf Non peer-reviewed articles}\\[-17mm]
+\begin{thebibliography}{10}
+\bibitem{Steinegger:2011}
+{\bf Steinegger M.} and Goiss, H. (2011)
+Introducing a Model-based Automated Test Script Generator.
+{\em Testing Experience}, 70-76
+\end{thebibliography}
+%\newpage
+\end{rSection}
+\clearpage
+\begin{rSection}{Teaching}
+\vspace{2mm}
+
+{\bf Lectures, seminars, and lab classes}\vspace{1mm}
+
+\begin{tabular}{p{2.5cm}p{14.1cm}}
+2022 & Integrative biology (graduate course). Seoul National University 
+\\[1.mm] 
+2022 & Introduction to bioinformatics (undergraduate course). Seoul National University 
+\\[1.mm] 
+2021 & Advanced topics in bioinformatics (graduate course). Seoul National University 
+\\[1.mm] 
+2021 & Integrative biology (graduate course). Seoul National University 
+\\[1.mm] 
+2021 & Introduction to bioinformatics (undergraduate course). Seoul National University 
+\\[1.mm] 
+2020 & Deep dive into metagenomic data using metagenome-atlas and MMseqs2 at ECCB 2020 in Spain.
+\\[1.mm] 
+2018 & Modern and scalable tools for efficient analysis of very large metagenomic at ECCB18 in Greece. 
+\\[1.mm] 
+2012 & Bioinformatics tutorial for bachelor students: Development of tutorial material and teaching at the Ludwig Maximilian University. 
+\\[1.mm] 
+2009 - 2011 & Database faculty at Accenture. Regularly held Oracle database seminars and reworked the course material. Full-time 2 day seminars for Accenture consultants 
+\\[1.mm] 
+2010 - 2011 & Security training at Accenture. Helped create a security curriculum and held seminars.
+\\[1.mm] 
+2010  & Java architecture seminars at Accenture, Full-time 5 days workshop for Java consultants 
+\\[1mm]
+\end{tabular}
+\vspace{1mm}
+
+{\bf (Co-)Supervised theses}\vspace{1mm} 
+\\[3mm]
+03/2021 - 09/2021: Minghang Lee, Bachelor, Biology, Seoul National University\\
+{\em Petasearch: Fast, approximate comparison of huge sequence datasets}
+\\[3mm]
+03/2021 - 09/2021: Sukhwan Park, Bachelor, Biology, Seoul National University\\
+{\em Methodology  of  building  Empirical  Codon Substitution  Model  using  XRate}
+\\[3mm]
+03/2021 - 09/2021: Doyoung Kim, Bachelor, Biology, Seoul National University\\
+{\em Fast homology detection neural network based profile prediciton}
+\\[3mm]
+03/2016 - 09/2016: Milot Mirdita, Master, Computer Science, LMU Munich\\
+{\em Uniclust - clustered and deeply annotated protein sequence databases}
+\\[3mm]
+04/2014 - 10/2014: Lars von der Driesch, Master, Bioinformatics,  LMU Munich / TU Munich\\
+{\em Deep clustering and annotation of the Uniprot database}
+\\[3mm]
+11/2013 - 05/2014: Stefan Haunsberger, Bachelor, Bioinformatics, Hochschule Weihenstephan-Triesdorf\\
+{\em Fast AVX-based Forward-Backward and Maximum Accuracy algorithms for pairwise alignment of profile hidden Markov models}
+\\[1.mm] 
+\end{rSection}
+
+\end{document}
+
