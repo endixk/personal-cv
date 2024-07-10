@@ -1,2 +1,0 @@
-# personal-cv
-personal CV
