@@ -1,6 +1,6 @@
 \documentclass{resume} % Use the custom resume.cls style
 \name{Kim, Dongwook} % Your name
-\address{University of Lausanne, Gènopode \\ 1015 Lausanne, Switzerland} % Your address
+\address{Génopode 1015.3, University of Lausanne \\ 1015 Lausanne, Switzerland} % Your address
 %\address{Born 29.10.1996 in Seoul. Citizen of Republic of Korea. }
 %\address{+82~$\cdot$~2~$\cdot$~880~$\cdot$~4438}
 \address{\Letter~dongwook.kim@unil.ch $\vee$ endix1029@gmail.com} % Your phone number and email
@@ -18,8 +18,22 @@
 
 \definecolor{urlcol}{rgb}{0,0,0.7}
 \definecolor{highlight}{rgb}{0.5,0,0}
-\usepackage[colorlinks, urlcolor=blue, linkcolor=blue]{hyperref}
+\usepackage[hidelinks]{hyperref}
+\usepackage[normalem]{ulem}
+\renewcommand{\url}[1]{\uline{\href{#1}{#1}}}
+\newcommand{\uhref}[2]{\href{#1}{\uline{#2}}}
+\newcommand{\doi}[1]{\uhref{https://doi.org/#1}{#1}}
 
+%\usepackage[sfdefault]{roboto}
+%\usepackage[scaled]{helvet}
+\usepackage{libertinus}
+\renewcommand{\familydefault}{\sfdefault}
+
+\newcommand{\subheading}[1]{%
+  \vspace{0.5mm}%
+  {\fontsize{11.5pt}{13pt}\selectfont\bfseries #1}%
+  \vspace{1mm}%
+}
 
 \pagestyle{empty}
 \oddsidemargin  -0.2cm
@@ -29,12 +43,12 @@
 \topmargin      -1.8cm
 \textheight     26cm
 \parindent      0cm
-\renewcommand{\familydefault}{\sfdefault}
+%\renewcommand{\familydefault}{\sfdefault}
 \setlength{\parskip}{5pt}
 
 \renewcommand\refname{}
 \renewcommand{\contentsname}{\LARGE Curriculum Vitae\\[20mm]{\Large Content\\[0mm]}}
-\providecommand{\href}[2]{#2}                          %generates the href macro if needed
+% \providecommand{\href}[2]{#2}                          %generates the href macro if needed
 
 \newenvironment{packed_itemize}{
 \begin{itemize}
@@ -69,9 +83,9 @@
 
 
 \begin{rSection}{Curriculum Vitae}
-\vspace{2mm}
+\vspace{1mm}
 
-{\bf Education}\vspace{1mm}
+\subheading{Education}
 
 \begin{tabular}{p{3.6cm}p{13.0cm}}
 03/2019 - 02/2025 & Ph.D. in Bioinformatics at Seoul National University
@@ -83,18 +97,18 @@
 \end{tabular}
 \vspace{1mm}
 
-{\bf Research experience}\vspace{1mm}
+\subheading{Research experience}
 
 \begin{tabular}{p{3.6cm}p{13.0cm}}
 05/2025 - & Postdoctoral fellow at the Dessimoz Lab., University of Lausanne. \textit{full-time}
 \\[1.mm]
 03/2025 - 04/2025 & Postdoctoral fellow at the Steinegger Lab., Seoul National University. \textit{full-time}
 \\[1.mm]
-03/2022 - 02/2025 & Expert Research Personnel at the College of Natural Sciences, Seoul National University. \textit{full-time}
+%03/2022 - 02/2025 & Expert Research Personnel at the College of Natural Sciences, Seoul National University. \textit{full-time}
+%\\[1.mm]
+12/2021 - 02/2025 & Ph.D. candidate at the Steinegger Lab., Seoul National University. \textit{full-time}
 \\[1.mm]
-12/2021 - 02/2025 & Ph.D. student at the Steinegger Lab., Seoul National University. \textit{full-time}
-\\[1.mm]
-03/2019 - 11/2021 & Ph.D. student at the Laboratory of Evolutionary Bioinformatics, Seoul National University. \textit{full-time}
+03/2019 - 11/2021 & Ph.D. candidate at the Laboratory of Evolutionary Bioinformatics, Seoul National University. \textit{full-time}
 \\[1.mm]
 06/2017 - 02/2019 & Intern at the Laboratory of Evolutionary Bioinformatics, Seoul National University
 \\[1.mm]
@@ -107,9 +121,9 @@
 \end{rSection}
 
 \begin{rSection}{Talks, Posters, and Publications}
-\vspace{2mm}
+\vspace{1mm}
 
-{\bf Talks }\vspace{1mm}
+\subheading{Talks}
 
 \begin{tabular}{p{2.5cm}p{14.1cm}}
 02/2025 & The 21\textsuperscript{st} KOGO Winter Symposium, Hongcheon, Korea, Introducing Unicore: A Scalable and Accurate Method for Structural Core Gene Phylogenetics
@@ -121,7 +135,7 @@
 \end{tabular}
 \vspace{1mm}
 
-{\bf Posters }\vspace{1mm}
+\subheading{Posters}
 
 \begin{tabular}{p{2.5cm}p{14.1cm}}
 04/2025 & RECOMB 2025, Seoul, Korea, Scalable and accurate structural core gene phylogeny with Unicore
@@ -138,48 +152,61 @@
 \vspace{1mm}
 \newpage
 
-{\bf Publications}\\[-26mm]
+\subheading{Peer-reviewed publications}\\[-26mm]
+
+\begin{thebibliography}{10}
+
+\vspace{8mm}
+
+\bibitem{kim2023ufcg}
+{\bf Kim D.}, Gilchrist C.L.M., Chun J. and Steinegger M. (2023),
+UFCG: database of universal fungal core genes and pipeline for genome-wide phylogenetic analysis of fungi, {\em Nucleic Acids Research}, doi: \doi{10.1093/nar/gkac894}
+
+\bibitem{kim2021ubcg2}
+Kim J., Na S., {\bf Kim D.} and Chun J.  (2022), 
+UBCG2: Up-to-date bacterial core genes and pipeline for phylogenomic analysis, {\em Journal of Microbiology}, doi: \doi{10.1007/s12275-021-1231-4}
+
+\bibitem{kim2021introducing}
+{\bf Kim D.}, Park S. and Chun J. (2021),
+Introducing EzAAI: a pipeline for high throughput calculations of prokaryotic average amino acid identity, {\em Journal of Microbiology}, doi: \doi{10.1007/s12275-021-1154-0}
+
+\end{thebibliography}
+\vspace{4mm}
+
+\subheading{Preprints}\\[-26mm]
 
 \begin{thebibliography}{10}
 
 \vspace{8mm}
 \bibitem{kim2024unicore}
 {\bf Kim D.}, Park S. and Steinegger M. (2024),
-Unicore enables scalable and accurate phylogenetic reconstruction with structural core genes, {\em bioRxiv}, doi: 10.1101/2024.12.22.629535
-	
-\bibitem{kim2023ufcg}
-{\bf Kim D.}, Gilchrist C.L.M., Chun J. and Steinegger M. (2023),
-UFCG: database of universal fungal core genes and pipeline for genome-wide phylogenetic analysis of fungi, {\em Nucleic Acids Research}, doi: 10.1093/nar/gkac894
+Unicore enables scalable and accurate phylogenetic reconstruction with structural core genes, {\em bioRxiv}, doi: \doi{10.1101/2024.12.22.629535}
 
-\bibitem{kim2021ubcg2}
-Kim J., Na S., {\bf Kim D.} and Chun J.  (2022), 
-UBCG2: Up-to-date bacterial core genes and pipeline for phylogenomic analysis, {\em Journal of Microbiology}, doi: 10.1007/s12275-021-1231-4
-
-\bibitem{kim2021introducing}
-{\bf Kim D.}, Park S. and Chun J. (2021),
-Introducing EzAAI: a pipeline for high throughput calculations of prokaryotic average amino acid identity, {\em Journal of Microbiology}, doi: 10.1007/s12275-021-1154-0
+\bibitem{park2024structural}
+Park J., Lee G., Han Y., {\bf Kim D.}, Heo K. et al. (2024),
+Structural basis of the catalytic and allosteric mechanism of bacterial acetyltransferase PatZ, {\em bioRxiv}, doi: \doi{10.1101/2024.11.12.623305}
 
 \end{thebibliography}
 \vspace{4mm}
 
-{\bf Public source codes }\vspace{1mm} 
+\subheading{Public source codes}
 
 \begin{tabular}{p{2.5cm}p{14.1cm}}
 EzAAI  & \url{https://github.com/endixk/ezaai} \\[1.mm]
 UFCG  & \url{https://github.com/steineggerlab/ufcg} \\[1.mm]
 Unicore &  \url{https://github.com/steineggerlab/unicore} \\[1.mm]
 \end{tabular}
-\vspace{1mm}
+\vspace{2mm}
 
 \end{rSection}
 
 \begin{rSection}{Achievements and Qualifications}
-\vspace{2mm}
+\vspace{1mm}
 
-{\bf Awards, Fellowships and Achievements}\vspace{1mm}
+\subheading{Awards, Fellowships and Achievements}\vspace{1mm}
 
 \begin{tabular}{p{2.5cm}p{14.1cm}}
-2025 & KOGO Young Scientist Award
+2025 & KOGO Young Scientist Award, KRW 150,000
 \\[1.mm] 
 2017 & Samsung Convergence Software Course Scholarship, KRW 1,000,000
 \\[1.mm] 
@@ -188,7 +215,7 @@ Unicore &  \url{https://github.com/steineggerlab/unicore} \\[1.mm]
 \end{tabular}
 \vspace{1.0mm}
 
-{\bf Certificates }\vspace{1mm}
+\subheading{Certificates}\vspace{1mm}
 
 \begin{tabular}{p{2.5cm}p{14.1cm}}
 2019 & Advanced english proficiency, Test of English Proficiency (Score 492/600, percentile rank 94.65\%)
@@ -196,7 +223,7 @@ Unicore &  \url{https://github.com/steineggerlab/unicore} \\[1.mm]
 \end{tabular}
 \vspace{1.0mm}
 
-{\bf Technical Strengths}\vspace{1mm}
+\subheading{Technical Strengths}\vspace{1mm}
 
 \begin{tabular}{ p{2.5cm} >{}l @{\hspace{6ex}} l }
 Programming & Java, Rust, Python, C/C\texttt{++}, Linux, Shell scripting \\[1.mm]
@@ -205,7 +232,7 @@ Databases & SQL, MySQL
 \end{tabular}
 \vspace{1.0mm}
 
-{\bf Languages}\vspace{1mm}
+\subheading{Languages}\vspace{1mm}
 
 \begin{tabular}{p{2.5cm}p{14.1cm}}
 Korean & Native\\[1.mm]
