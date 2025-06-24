@@ -10,6 +10,7 @@
 \usepackage{graphicx}
 \usepackage{eso-pic}
 \usepackage[utf8]{inputenc}
+\usepackage{comment}
 
 %\usepackage{picins}    % um das Foto in die rechte obere Ecke zu bekommen
 \usepackage{eurosym}
@@ -20,9 +21,12 @@
 \definecolor{highlight}{rgb}{0.5,0,0}
 \usepackage[hidelinks]{hyperref}
 \usepackage[normalem]{ulem}
+
+%Custom commands
 \renewcommand{\url}[1]{\uline{\href{#1}{#1}}}
 \newcommand{\uhref}[2]{\href{#1}{\uline{#2}}}
 \newcommand{\doi}[1]{\uhref{https://doi.org/#1}{#1}}
+\newcommand{\piinfo}[2]{\hfill\textcolor{black!70}{\fontsize{10pt}{11.5pt}\selectfont #1: \textit{#2}}}
 
 %\usepackage[sfdefault]{roboto}
 %\usepackage[scaled]{helvet}
@@ -81,7 +85,7 @@
 \setlength{\textheight}{26cm}
 \setlength{\tabcolsep}{0cm}
 
-
+\vspace{3mm}
 \begin{rSection}{Curriculum Vitae}
 \vspace{1mm}
 
@@ -100,16 +104,16 @@
 \subheading{Research experience}
 
 \begin{tabular}{p{3.6cm}p{13.0cm}}
-05/2025 - & Postdoctoral fellow at the Dessimoz Lab., University of Lausanne. \textit{full-time}
-\\[1.mm]
-03/2025 - 04/2025 & Postdoctoral fellow at the Steinegger Lab., Seoul National University. \textit{full-time}
-\\[1.mm]
+05/2025 - & Postdoctoral fellow at the Comparative Genomics Group, University of Lausanne.\\
+& \piinfo{PI}{Prof. Christophe Dessimoz \& Dr. Natasha Glover} \\[1.mm]
+03/2025 - 04/2025 & Postdoctoral fellow at the Steinegger Lab., Seoul National University. \\
+& \piinfo{PI}{Prof. Martin Steinegger} \\[1.mm]
 %03/2022 - 02/2025 & Expert Research Personnel at the College of Natural Sciences, Seoul National University. \textit{full-time}
 %\\[1.mm]
-12/2021 - 02/2025 & Ph.D. candidate at the Steinegger Lab., Seoul National University. \textit{full-time}
-\\[1.mm]
-03/2019 - 11/2021 & Ph.D. candidate at the Laboratory of Evolutionary Bioinformatics, Seoul National University. \textit{full-time}
-\\[1.mm]
+12/2021 - 02/2025 & Ph.D. candidate at the Steinegger Lab., Seoul National University. \\
+& \piinfo{Advisor}{Prof. Martin Steinegger} \\[1.mm]
+03/2019 - 11/2021 & Ph.D. candidate at the Laboratory of Evolutionary Bioinformatics, Seoul National University. \\
+& \piinfo{Advisor}{Prof. Jongsik Chun} \\[1.mm]
 06/2017 - 02/2019 & Intern at the Laboratory of Evolutionary Bioinformatics, Seoul National University
 \\[1.mm]
 06/2014 - 07/2014 & Visiting student at the Neurovascular Research Laboratory, Department of Radiology, Massachusetts General Hospital, Harvard Medical School
@@ -119,6 +123,8 @@
 \end{tabular}
 \vspace{1mm}
 \end{rSection}
+
+\newpage
 
 \begin{rSection}{Talks, Posters, and Publications}
 \vspace{1mm}
@@ -147,10 +153,8 @@
 07/2023 & ISMB/ECCB 2023, Lyon, France, UFCG: database of universal fungal core genes and pipeline for genome-wide phylogenetic analysis of fungi
 \\[1mm]
 06/2020 & ASM Microbe Online, Virtual, UUCGf: Whole-Genome Profiling Pipeline of Fungi with Fungal Core Gene Set for High-Resolution Phylogenetics
-\\[1mm]
 \end{tabular}
-\vspace{1mm}
-\newpage
+\vspace{4mm}
 
 \subheading{Peer-reviewed publications}\\[-26mm]
 
@@ -158,47 +162,51 @@
 
 \vspace{8mm}
 
+\bibitem{kim2025unicore}
+{\bf Kim D.}, Park S. and Steinegger M. (2025),
+Unicore enables scalable and accurate phylogenetic reconstruction with structural core genes, {\em Genome Biol. Evol.}, doi: \doi{10.1093/gbe/evaf109}
+
+\bibitem{park2025structural}
+Park J., Lee G., Han Y., {\bf Kim D.}, Heo K. et al. (2025),
+Structural basis of the catalytic and allosteric mechanism of bacterial acetyltransferase PatZ, {\em Proc. Natl. Acad. Sci. U. S. A.}, doi: \doi{10.1073/pnas.2419096122}
+
 \bibitem{kim2023ufcg}
 {\bf Kim D.}, Gilchrist C.L.M., Chun J. and Steinegger M. (2023),
-UFCG: database of universal fungal core genes and pipeline for genome-wide phylogenetic analysis of fungi, {\em Nucleic Acids Research}, doi: \doi{10.1093/nar/gkac894}
+UFCG: database of universal fungal core genes and pipeline for genome-wide phylogenetic analysis of fungi, {\em Nucleic Acids Res.}, doi: \doi{10.1093/nar/gkac894}
 
 \bibitem{kim2021ubcg2}
 Kim J., Na S., {\bf Kim D.} and Chun J.  (2022), 
-UBCG2: Up-to-date bacterial core genes and pipeline for phylogenomic analysis, {\em Journal of Microbiology}, doi: \doi{10.1007/s12275-021-1231-4}
+UBCG2: Up-to-date bacterial core genes and pipeline for phylogenomic analysis, {\em J. Microbiol.}, doi: \doi{10.1007/s12275-021-1231-4}
 
 \bibitem{kim2021introducing}
 {\bf Kim D.}, Park S. and Chun J. (2021),
-Introducing EzAAI: a pipeline for high throughput calculations of prokaryotic average amino acid identity, {\em Journal of Microbiology}, doi: \doi{10.1007/s12275-021-1154-0}
+Introducing EzAAI: a pipeline for high throughput calculations of prokaryotic average amino acid identity, {\em J. Microbiol.}, doi: \doi{10.1007/s12275-021-1154-0}
 
 \end{thebibliography}
 \vspace{4mm}
 
+\begin{comment}
 \subheading{Preprints}\\[-26mm]
 
 \begin{thebibliography}{10}
 
 \vspace{8mm}
-\bibitem{kim2024unicore}
-{\bf Kim D.}, Park S. and Steinegger M. (2024),
-Unicore enables scalable and accurate phylogenetic reconstruction with structural core genes, {\em bioRxiv}, doi: \doi{10.1101/2024.12.22.629535}
-
-\bibitem{park2024structural}
-Park J., Lee G., Han Y., {\bf Kim D.}, Heo K. et al. (2024),
-Structural basis of the catalytic and allosteric mechanism of bacterial acetyltransferase PatZ, {\em bioRxiv}, doi: \doi{10.1101/2024.11.12.623305}
 
 \end{thebibliography}
 \vspace{4mm}
+\end{comment}
 
 \subheading{Public source codes}
 
 \begin{tabular}{p{2.5cm}p{14.1cm}}
-EzAAI  & \url{https://github.com/endixk/ezaai} \\[1.mm]
-UFCG  & \url{https://github.com/steineggerlab/ufcg} \\[1.mm]
 Unicore &  \url{https://github.com/steineggerlab/unicore} \\[1.mm]
+UFCG  & \url{https://github.com/steineggerlab/ufcg} \\[1.mm]
+EzAAI  & \url{https://github.com/endixk/ezaai} \\[1.mm]
 \end{tabular}
 \vspace{2mm}
 
 \end{rSection}
+\newpage
 
 \begin{rSection}{Achievements and Qualifications}
 \vspace{1mm}
@@ -206,7 +214,9 @@ Unicore &  \url{https://github.com/steineggerlab/unicore} \\[1.mm]
 \subheading{Awards, Fellowships and Achievements}\vspace{1mm}
 
 \begin{tabular}{p{2.5cm}p{14.1cm}}
-2025 & KOGO Young Scientist Award, KRW 150,000
+2025 & KOGO Young Scientist Award
+\\[1.mm] 
+2021 & IMBG Young Scientist Award
 \\[1.mm] 
 2017 & Samsung Convergence Software Course Scholarship, KRW 1,000,000
 \\[1.mm] 

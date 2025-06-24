@@ -1,5 +1,7 @@
 ## Curriculum Vitae
 
-My curriculum vitae written in LaTeX, based on the template of [@martin-steinegger](https://github.com/martin-steinegger)
+My curriculum vitae, written in LaTeX, typeset as a PDF document.
 
-Last update: 11 May 2025
+Modified from the LaTeX code of [@martin-steinegger](https://github.com/martin-steinegger)'s CV.
+
+Last update: 24 Jun 2025
