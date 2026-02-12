@@ -21,6 +21,8 @@
 \definecolor{highlight}{rgb}{0.5,0,0}
 \usepackage[hidelinks]{hyperref}
 \usepackage[normalem]{ulem}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
 
 %Custom commands
 \renewcommand{\url}[1]{\uline{\href{#1}{#1}}}
@@ -30,7 +32,8 @@
 \newcommand{\talktag}[1]{%
   \textcolor{black!70}{\fontsize{9pt}{10.5pt}\selectfont\textit{#1}}%
 }
-
+\newcommand{\normtilde}{\raisebox{0.6ex}{\texttildelow}}
+\newcommand{\preprinttag}{\textcolor{black!70}{\textsc{[Preprint]}}\ }
 
 %\usepackage[sfdefault]{roboto}
 %\usepackage[scaled]{helvet}
@@ -172,57 +175,46 @@
 \end{tabular}
 \vspace{4mm}
 
-\subheading{Peer-reviewed publications}\\[-26mm]
+\subheading{Publications}\\
+{\fontsize{9pt}{10.5pt}\selectfont
+  \textcolor{black!70}{\textsuperscript{$\ast$} \textit{Correspondence.} \textsuperscript{$\dagger$} \textit{Equal contributions.}}%
+}\\[-24mm]
 
 \begin{thebibliography}{10}
-
 \vspace{8mm}
 
+\bibitem{kim2026ampliphy} \preprinttag
+{\bf Kim D.\textsuperscript{$\ast$}}, Gil M., Katoh K. and Dessimoz C. (2026),
+AmpliPhy improves gene trees by adding homologs without affecting alignments, {\em bioR$\chi$iv}, doi: \doi{10.64898/2026.01.26.701724}
+
 \bibitem{kim2025unicore}
-{\bf Kim D.}, Park S. and Steinegger M. (2025),
+{\bf Kim D.\textsuperscript{$\dagger$}}, Park S\textsuperscript{$\dagger$}. and Steinegger M\textsuperscript{$\ast$}. (2025),
 Unicore enables scalable and accurate phylogenetic reconstruction with structural core genes, {\em Genome Biol. Evol.}, doi: \doi{10.1093/gbe/evaf109}
 
 \bibitem{park2025structural}
-Park J., Lee G., Han Y., {\bf Kim D.}, Heo K. et al. (2025),
+Park J.\textsuperscript{$\dagger$}, Lee G.\textsuperscript{$\dagger$}, Han Y.\textsuperscript{$\dagger$}, {\bf Kim D.}, Heo K. et al. (2025),
 Structural basis of the catalytic and allosteric mechanism of bacterial acetyltransferase PatZ, {\em Proc. Natl. Acad. Sci. U. S. A.}, doi: \doi{10.1073/pnas.2419096122}
 
 \bibitem{kim2023ufcg}
-{\bf Kim D.}, Gilchrist C.L.M., Chun J. and Steinegger M. (2023),
+{\bf Kim D.}, Gilchrist C.L.M., Chun J\textsuperscript{$\ast$}. and Steinegger M\textsuperscript{$\ast$}. (2023),
 UFCG: database of universal fungal core genes and pipeline for genome-wide phylogenetic analysis of fungi, {\em Nucleic Acids Res.}, doi: \doi{10.1093/nar/gkac894}
 
 \bibitem{kim2021ubcg2}
-Kim J., Na S., {\bf Kim D.} and Chun J.  (2022), 
+Kim J.\textsuperscript{$\dagger$}, Na S.\textsuperscript{$\dagger$}, {\bf Kim D.} and Chun J\textsuperscript{$\ast$}.  (2022), 
 UBCG2: Up-to-date bacterial core genes and pipeline for phylogenomic analysis, {\em J. Microbiol.}, doi: \doi{10.1007/s12275-021-1231-4}
 
 \bibitem{kim2021introducing}
-{\bf Kim D.}, Park S. and Chun J. (2021),
+{\bf Kim D.\textsuperscript{$\dagger$}}, Park S.\textsuperscript{$\dagger$} and Chun J\textsuperscript{$\ast$}. (2021),
 Introducing EzAAI: a pipeline for high throughput calculations of prokaryotic average amino acid identity, {\em J. Microbiol.}, doi: \doi{10.1007/s12275-021-1154-0}
 
 \end{thebibliography}
-\vspace{4mm}
+%\vspace{4mm}
+\newpage
 
-\begin{comment}
-\subheading{Preprints}\\[-26mm]
 
-\begin{thebibliography}{10}
-
-\vspace{8mm}
-
-\end{thebibliography}
-\vspace{4mm}
-\end{comment}
-
-\subheading{Public source codes}
-
-\begin{tabular}{p{2.5cm}p{14.1cm}}
-Unicore  & \url{https://github.com/steineggerlab/unicore} \\[1.mm]
-UFCG     & \url{https://github.com/steineggerlab/ufcg} \\[1.mm]
-EzAAI    & \url{https://github.com/endixk/ezaai} \\[1.mm]
-\end{tabular}
-\vspace{2mm}
 
 \end{rSection}
-\newpage
+%\newpage
 
 \begin{rSection}{Achievements and Qualifications}
 \vspace{1mm}
@@ -230,13 +222,13 @@ EzAAI    & \url{https://github.com/endixk/ezaai} \\[1.mm]
 \subheading{Awards, Fellowships and Achievements}\vspace{1mm}
 
 \begin{tabular}{p{2.5cm}p{14.1cm}}
-2025 & KOGO Young Scientist Award
+2025 & KOGO Young Scientist Award, KRW 150,000 (\normtilde USD 106)
 \\[1.mm] 
-2021 & IMBG Young Scientist Award
+2021 & IMBG Young Scientist Award, KRW 300,000 (\normtilde USD 262)
 \\[1.mm] 
-2017 & Samsung Convergence Software Course Scholarship, KRW 1,000,000
+2017 & Samsung Convergence Software Course Scholarship, KRW 1,000,000 (\normtilde USD 886)
 \\[1.mm] 
-2015 & National Science \& Technology Scholarship from the National Research Foundation of Korea, KRW 24,033,000
+2015 & National Science \& Technology Scholarship (KOSAF), KRW 24,033,000 (\normtilde USD 21,250)
 \\[1.mm] 
 \end{tabular}
 \vspace{1.0mm}
@@ -252,18 +244,21 @@ EzAAI    & \url{https://github.com/endixk/ezaai} \\[1.mm]
 \subheading{Technical Strengths}\vspace{1mm}
 
 \begin{tabular}{ p{2.5cm} >{}l @{\hspace{6ex}} l }
-Programming & Java, Rust, Python, C/C\texttt{++}, Linux, Shell scripting \\[1.mm]
-Databases & SQL, MySQL
-\\[1.mm]
+Programming & Java, Rust, Python, \LaTeX, Nextflow, R, C/C\texttt{++}, Linux, Bash \\[1.mm]
+Databases & SQL, MySQL \\[1.mm]
+Distribution & GitHub, Conda, Docker \\[1.mm]
+Cloud & Amazon AWS, CloudFlare R2 \\[1.mm]
+Design & Figma \\[1.mm]
+
 \end{tabular}
 \vspace{1.0mm}
 
 \subheading{Languages}\vspace{1mm}
 
 \begin{tabular}{p{2.5cm}p{14.1cm}}
-Korean & Native\\[1.mm]
-English & Fluent\\[1.mm]
-French & Beginner\\[1.mm]
+Korean & Native proficiency\\[1.mm]
+English & Full professional proficiency\\[1.mm]
+French & Elementary proficiency\\[1.mm]
 \end{tabular}
 
 \end{rSection}
@@ -280,6 +275,18 @@ Fall 2021 & Teaching assistant, Microbial Systematics, Seoul National University
 Fall 2020 & Teaching assistant, Microbial Systematics, Seoul National University
 \end{tabular}
 \vspace{4mm}
+
+\end{rSection}
+
+\begin{rSection}{Public Soruce Codes}
+
+\begin{tabular}{p{2.5cm}p{14.1cm}}
+AmpliPhy & \url{https://github.com/dessimozlab/ampliphy} \\[1.mm]
+Unicore  & \url{https://github.com/steineggerlab/unicore} \\[1.mm]
+UFCG     & \url{https://github.com/steineggerlab/ufcg} \\[1.mm]
+EzAAI    & \url{https://github.com/endixk/ezaai} \\[1.mm]
+\end{tabular}
+\vspace{2mm}
 
 \end{rSection}
 
